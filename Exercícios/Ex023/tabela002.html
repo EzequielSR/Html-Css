@@ -12,6 +12,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
         td,
         th {
@@ -29,6 +31,11 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         tbody > tr:nth-child(odd){ /*2n-1*/
@@ -65,12 +72,36 @@
             </thead>
             <tbody>
                 <tr>
+                    <td>São Paulo</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num"></td>
+                </tr>
+                <tr>
                     <td>Rio Grande do Sul</td>
                     <td class="num">10 882 965</td>
                 </tr>
                 <tr>
                     <td>Pernambuco</td>
                     <td class="num">9 058 931</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Pará</td>
